@@ -35,7 +35,7 @@ class NumberPlateDetectionAndReading(Pipeline, CompositePipeline):
                  presets: Dict = None,
                  off_number_plate_classification: bool = False,
                  classification_options: List = None,
-                 default_label: str = "eu_ua_2015",
+                 default_label: str = "ru",
                  default_lines_count: int = 1,
                  number_plate_localization_class: Pipeline = DefaultNumberPlateLocalization,
                  number_plate_localization_detector=None,

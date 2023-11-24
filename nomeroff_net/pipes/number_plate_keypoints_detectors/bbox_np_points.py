@@ -11,7 +11,8 @@ from nomeroff_net.tools.image_processing import (distance,
                                                  get_cv_zone_rgb,
                                                  crop_image,
                                                  minimum_bounding_rectangle,
-                                                 reshape_points)
+                                                 reshape_points,
+                                                 convert_cv_zones_rgb_to_bgr)
 
 from .bbox_np_points_tools import (
     copy_state_dict,

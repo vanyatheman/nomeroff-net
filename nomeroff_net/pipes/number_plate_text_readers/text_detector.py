@@ -16,7 +16,7 @@ class TextDetector(object):
 
     def __init__(self,
                  presets: Dict = None,
-                 default_label: str = "eu_ua_2015",
+                 default_label: str = "ru",
                  default_lines_count: int = 1,
                  load_models=True) -> None:
         if presets is None:

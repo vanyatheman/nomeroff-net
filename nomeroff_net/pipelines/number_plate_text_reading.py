@@ -6,46 +6,46 @@ from nomeroff_net.tools import unzip
 from nomeroff_net.pipes.number_plate_text_readers.text_detector import TextDetector
 
 DEFAULT_PRESETS = {
-    "eu_ua_2004_2015": {
-        "for_regions": ["eu_ua_2015", "eu_ua_2004"],
-        "model_path": "latest"
-    },
-    "eu_ua_1995": {
-        "for_regions": ["eu_ua_1995"],
-        "model_path": "latest"
-    },
-    "eu": {
-        "for_regions": ["eu", "xx_transit", "xx_unknown"],
-        "model_path": "latest"
-    },
+    # "eu_ua_2004_2015": {
+    #     "for_regions": ["eu_ua_2015", "eu_ua_2004"],
+    #     "model_path": "latest"
+    # },
+    # "eu_ua_1995": {
+    #     "for_regions": ["eu_ua_1995"],
+    #     "model_path": "latest"
+    # },
+    # "eu": {
+    #     "for_regions": ["eu", "xx_transit", "xx_unknown"],
+    #     "model_path": "latest"
+    # },
     "ru": {
         "for_regions": ["ru", "eu_ua_ordlo_lpr", "eu_ua_ordlo_dpr"],
         "model_path": "latest"
     },
-    "kz": {
-        "for_regions": ["kz"],
-        "model_path": "latest"
-    },
-    "kg": {  # "kg_shufflenet_v2_x2_0"
-        "for_regions": ["kg"],
-        "model_path": "latest"
-    },
-    "ge": {
-        "for_regions": ["ge"],
-        "model_path": "latest"
-    },
-    "su": {
-        "for_regions": ["su"],
-        "model_path": "latest"
-    },
-    "am": {
-        "for_regions": ["am"],
-        "model_path": "latest"
-    },
-    "by": {
-        "for_regions": ["by"],
-        "model_path": "latest"
-    },
+    # "kz": {
+    #     "for_regions": ["kz"],
+    #     "model_path": "latest"
+    # },
+    # "kg": {  # "kg_shufflenet_v2_x2_0"
+    #     "for_regions": ["kg"],
+    #     "model_path": "latest"
+    # },
+    # "ge": {
+    #     "for_regions": ["ge"],
+    #     "model_path": "latest"
+    # },
+    # "su": {
+    #     "for_regions": ["su"],
+    #     "model_path": "latest"
+    # },
+    # "am": {
+    #     "for_regions": ["am"],
+    #     "model_path": "latest"
+    # },
+    # "by": {
+    #     "for_regions": ["by"],
+    #     "model_path": "latest"
+    # },
 }
 
 
@@ -58,7 +58,7 @@ class NumberPlateTextReading(Pipeline):
                  task,
                  image_loader: Optional[Union[str, BaseImageLoader]],
                  presets: Dict = None,
-                 default_label: str = "eu_ua_2015",
+                 default_label: str = "ru",
                  default_lines_count: int = 1,
                  class_detector=TextDetector,
                  need_preprocess=False,

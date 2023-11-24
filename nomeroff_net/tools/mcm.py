@@ -8,45 +8,45 @@ model_config_urls = [
     "https://models.vsp.net.ua/config_model/nomeroff-net-ua-np-classification/model_efficientnet_v2_s-2.json",
 
     # ocr
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-am/model-4.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-am/model-shufflenet_v2_x2_0-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-am/model-4.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-am/model-shufflenet_v2_x2_0-3.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-by/model-3.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-by/model-shufflenet_v2_x2_0-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-by/model-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-by/model-shufflenet_v2_x2_0-3.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu/model-5.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu/model-efficientnet_b2-2.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu/model-shufflenet_v2_x2_0-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu/model-5.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu/model-efficientnet_b2-2.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu/model-shufflenet_v2_x2_0-3.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_1995/model-7.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_1995/model-efficientnet_b2-7.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_1995/model-shufflenet_v2_x2_0-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_1995/model-7.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_1995/model-efficientnet_b2-7.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_1995/model-shufflenet_v2_x2_0-3.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_from_2004/model-11.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_from_2004/model-efficientnet_b2-512-11.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_from_2004/model-shufflenet_v2_x2_0-7.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_from_2004/model-11.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_from_2004/model-efficientnet_b2-512-11.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-eu_ua_from_2004/model-shufflenet_v2_x2_0-7.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-kg/model-4.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-kg/model-shufflenet_v2_x2_0-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-kg/model-4.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-kg/model-shufflenet_v2_x2_0-3.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-su/model-5.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-su/model-shufflenet_v2_x2_0-3.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-su/model-efficientnet_b2-416-2.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-su/model-5.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-su/model-shufflenet_v2_x2_0-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-su/model-efficientnet_b2-416-2.json",
 
     "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ru/model-4.json",
     "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ru/model-shufflenet_v2_x2_0-2.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-md/model-2.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-md/model-shufflenet_v2_x2_0-2.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-md/model-2.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-md/model-shufflenet_v2_x2_0-2.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-kz/model-4.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-kz/model-shufflenet_v2_x2_0-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-kz/model-4.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-kz/model-shufflenet_v2_x2_0-3.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ge/model-shufflenet_v2_x2_0-3.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ge/model-4.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ge/model-shufflenet_v2_x2_0-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ge/model-4.json",
 
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ru-military/model-shufflenet_v2_x2_0-3.json",
-    "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ru-military/model-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ru-military/model-shufflenet_v2_x2_0-3.json",
+    # "https://models.vsp.net.ua/config_model/nomeroff-net-ocr-ru-military/model-3.json",
 
     # object detection
     "https://models.vsp.net.ua/config_model/nomeroff-net-yolov5/model-2.json",
