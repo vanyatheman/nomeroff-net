@@ -197,6 +197,7 @@ class Pipeline(AccuracyTestPipeline):
         It is not meant to be called directly, it will be automatically called and the final parameters resolved by
         `__init__` and `__call__`
         """
+        print(">>>sanitize_parameters in pipline called: ", pipeline_parameters)
         return pipeline_parameters, pipeline_parameters, pipeline_parameters
 
     @abstractmethod
@@ -261,6 +262,8 @@ class Pipeline(AccuracyTestPipeline):
         """
         TODO: write description
         """
+        print(">>>process_worker is called")
+        print(f">>>{func}")
         if num_workers == 1:
             return func(inputs, **params)
         promises_outputs = []
@@ -274,10 +277,10 @@ class Pipeline(AccuracyTestPipeline):
                         "kwargs": params
                     }
                 )
-            # print(f"RUN promise_all {func} functions {len(promise_all_args)}")
+            print(f">>>RUN promise_all {func} functions {len(promise_all_args)}")
             promise_outputs = promise_all(promise_all_args)
             promises_outputs.append(promise_outputs)
-
+        # print(">>>promise_all_args:", promise_all_args)
         outputs = []
         for promise_output in promises_outputs:
             for chunk in promise_output:

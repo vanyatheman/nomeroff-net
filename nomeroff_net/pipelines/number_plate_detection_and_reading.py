@@ -86,6 +86,7 @@ class NumberPlateDetectionAndReading(Pipeline, CompositePipeline):
             default_label=default_label,
             default_lines_count=default_lines_count,
         )
+        print("$#$#$#$", self.number_plate_text_reading)
         self.pipelines = [
             self.number_plate_localization,
             self.number_plate_key_points_detection,
@@ -97,6 +98,7 @@ class NumberPlateDetectionAndReading(Pipeline, CompositePipeline):
         CompositePipeline.__init__(self, self.pipelines)
 
     def __call__(self, images: Any, **kwargs):
+        print("NumberPlateDetectionAndReading is called")
         return super().__call__(images, **kwargs)
 
     def preprocess(self, inputs: Any, **preprocess_parameters: Dict) -> Any:

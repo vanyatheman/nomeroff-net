@@ -1,3 +1,4 @@
+import cv2
 import numpy as np
 import warnings
 import copy
@@ -22,6 +23,7 @@ class TextDetector(object):
         if presets is None:
             presets = {}
         self.presets = presets
+        print("$#$#$#$", self.presets)
 
         self.detectors_map = {}
         self.detectors = []
@@ -48,6 +50,7 @@ class TextDetector(object):
         """
         TODO: support reloading
         """
+        print("TextDetector load is called")
         self.detectors = []
         for i, detector_name in enumerate(self.detectors_names):
             model_conf = copy.deepcopy(modelhub.models[detector_name])
@@ -88,6 +91,7 @@ class TextDetector(object):
                               f"Label changed on default '{self.default_label}'.")
                 label = self.default_label
             detector = self.detectors_map[label]
+            print("$$$ define_order_detector detector:", detector)
             if detector not in predicted.keys():
                 predicted[detector] = {"zones": [], "order": []}
             predicted[detector]["zones"].append(zone)
@@ -118,8 +122,11 @@ class TextDetector(object):
     @no_grad()
     def forward(self, predicted):
         for key in predicted.keys():
+            print(">>> keys in text_detector forward:", list(predicted[key].keys()))
             xs = predicted[key]["xs"]
+            print("### self.detectors:", self.detectors)
             predicted[key]["ys"] = self.detectors[int(key)].forward(xs)
+        print("### text_detector forward predicted:", list(predicted[0].keys()))
         return predicted
 
     def postprocess(self, predicted):
@@ -128,6 +135,7 @@ class TextDetector(object):
             predicted[key]["ys"] = self.detectors[int(key)].postprocess(predicted[key]["ys"])
             res_all = res_all + predicted[key]["ys"]
             order_all = order_all + predicted[key]["order"]
+        print("xdd:", [x for _, x in sorted(zip(order_all, res_all), key=lambda pair: pair[0])])
         return [x for _, x in sorted(zip(order_all, res_all), key=lambda pair: pair[0])]
 
     def predict(self,
@@ -135,7 +143,6 @@ class TextDetector(object):
                 labels: List[str] = None,
                 lines: List[int] = None,
                 return_acc: bool = False) -> List:
-
         labels, lines = self.define_predict_classes(zones, labels, lines)
         predicted = self.define_order_detector(zones, labels)
 

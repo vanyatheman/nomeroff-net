@@ -98,6 +98,7 @@ def decode_prediction(logits: torch.Tensor,
                       label_converter: StrLabelConverter) -> str:
     tokens = logits.softmax(2).argmax(2)
     tokens = tokens.squeeze(1).numpy()
+    acc = [logits.numpy()[i, 0, tokens[i]] for i in range(len(tokens))]
 
     text = label_converter.labels_to_text(tokens)
     return text
@@ -109,6 +110,7 @@ def decode_batch(net_out_value: torch.Tensor,
     for i in range(net_out_value.shape[1]):
         logits = net_out_value[:, i:i+1, :]
         pred_texts = decode_prediction(logits, label_converter)
+        print("OCR tools decode_batch pred_text:", pred_texts)
         texts.append(pred_texts)
     return texts
 
